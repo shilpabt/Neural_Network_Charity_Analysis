@@ -4,21 +4,20 @@
 The purpose of this project is to create a binary classifier that is capable of predicting whether applicants will be successful if funded by nonprofit foundation Alphabet Soup. This analysis will help to ensure that the foundation money being used properly and effectively. This neaural network ML algorithms are capable of interpreting large complex datasets. In our analysis, a CSV file containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Using this dataset, determine whether future charitable organisations will be successful if funded. For this analysis we need to clean and preprocess the data and decide what data is beneficial for the model accuracy.
 
 ## Resources
-Dataset Charity_data.csv
-Jupyter notebook
-Python
-Scikit-learn
-TensorFlow
-Pandas
+Dataset Charity_data.csv  
+Jupyter notebook   
+Python   
+Scikit-learn  
+TensorFlow  
+Pandas  
 
 ## Result
 ### Data Preprocessing
 #### What variable(s) are considered the target(s) for your model?
-    Within the given dataset, the target data is "IS SUCCESSFUL" column (1 for "YES" and 0 for "No")
-
+   Within the given dataset, the target data is "IS_SUCCESSFUL" column (1 for "YES" and 0 for "No")
 
 #### What variable(s) are considered to be the features for your model?  
-    Following are considered to be the features for the model,
+   Following are considered to be the features for the model,  
     APPLICATION_TYPE           
     AFFILIATION                  
     CLASSIFICATION              
@@ -30,12 +29,11 @@ Pandas
     ASK_AMT                   
     IS_SUCCESSFUL    
 
-#### What variable(s) are neither targets nor features, and should be removed from the input data?
-    Identification number and the names of the organization were not helpful within our dataset so they were removed.
+#### What variable(s) are neither targets nor features, and should be removed from the input data?  
+   Identification number and the names of the organization were not helpful within our dataset so they were removed.
 
 
 ### Compiling, Training, and Evaluating the Model
-
 #### How many neurons, layers, and activation functions did you select for your neural network model, and why?
 * Selected 200 neurons for the first layer and 90 neurons for the second layer(first layer should have atleast double the amount of input features).
 
@@ -44,7 +42,7 @@ Pandas
 * Used "relu" activation function for the input features beacause relu is generally a good activation function for the complex dataset which has numerous inputs and "sigmoid" for the output layer.
 
 #### Were you able to achieve the target model performance?
-    Yes, after a few configurations I could achieve the target model performance.
+   Yes, after a few configurations I could achieve the target model performance.
 
 
 |    Accuracy before optimization        |  Accuracy after optimization |
@@ -69,5 +67,5 @@ The model accuracy improved from 72.46% to 76.87% .
 The model result shows how well the model does with the given dataset and how we build the model. So our model tells us the loss score is 52.47% and accuracy score is 76.87%. Though we increased the accuracy score more than 75%, the loss score is still high. 
 
 #### Recommendations for further analysis   
-I recommend using a SVM or ensemble model as we are considering target data as binary results. We should also look for the outliers. 
+I recommend using SVM or ensemble model as we are considering target data as binary results. We should also look for the outliers. 
  
