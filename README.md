@@ -26,11 +26,10 @@ Pandas
     STATUS                      
     INCOME_AMT                  
     SPECIAL_CONSIDERATIONS      
-    ASK_AMT                   
-    IS_SUCCESSFUL    
+    ASK_AMT                
 
 #### What variable(s) are neither targets nor features, and should be removed from the input data?  
-   Identification number and the names of the organization were not helpful within our dataset so they were removed.
+   Identification number(EIN) and the names of the organization(NAME) were not helpful within our dataset so they were removed.
 
 
 ### Compiling, Training, and Evaluating the Model
